@@ -3,6 +3,8 @@ name: Manual workflow
 on:
  push:
 
+env:
+  PROJ_DIR: $GITHUB_WORKSPACE
 jobs:
  build:
    runs-on: Windows
