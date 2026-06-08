@@ -1,0 +1,26 @@
+name: Manual workflow
+
+on:
+ push:
+
+jobs:
+ build:
+   runs-on: Windows
+
+   steps:
+     - uses: actions/checkout@v3
+
+     - name: demo QA in CI
+       run: vcast/setenv.bat && %VECTORCAST_DIR%/vpython %VECTORCAST_DIR%/../vectorcast_gitlab/vc_scripts/vcast_exec.py vcast/Diner_Manager.vcm  --build-execute --ci --incremental 
+   
+     - name: Get covergae
+       run: echo get coverage
+     - uses: 5monkeys/cobertura-action@master
+       with:
+         path: vcast\xml_data\cobertura\coverage_results_project.xml
+         minimum_coverage: 75
+         skip_covered: false
+         show_line: true
+         show_branch: true
+         report_name: VectorCAST Code Coverage
+         show_missing: true
