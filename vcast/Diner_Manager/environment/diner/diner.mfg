@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manage-config-options version="7">
+  <config>
+    <key>VCDB_FILENAME</key>
+    <value>$(PROJ_DIR)\vcast\vcshell.db</value>
+    <key>VCDB_CMD_VERB</key>
+    <value>gcc</value>
+  </config>
+  <search-directory type="TESTABLE_SOURCE_DIR">$(PROJ_DIR)\src</search-directory>
+</manage-config-options>

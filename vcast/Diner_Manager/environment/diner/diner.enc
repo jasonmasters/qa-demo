@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cover>
+ <version>2</version>
+ <options>
+  <name>diner</name>
+  <vcdb_filename>$(PROJ_DIR)\vcast\vcshell.db</vcdb_filename>
+  <coverage>STATEMENT_MCDC</coverage>
+ </options>
+ <base>
+  <name>VCAST_SourceRoot</name>
+  <path>$(PROJ_DIR)</path>
+  <al>.</al>
+  <dl>vcast</dl>
+ </base>
+ <source>
+  <regressionable_path>
+   <base>VCAST_SourceRoot</base>
+   <subpath>src/manager.c</subpath>
+  </regressionable_path>
+  <append_cover_io>true</append_cover_io>
+ </source>
+</cover>
+
