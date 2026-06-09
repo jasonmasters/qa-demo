@@ -3,6 +3,7 @@ rem set environment
 rem use NVLM
 set VECTOR_LICENSE_FILE=
 
+set VECTORCAST_DIR=c:\dev\VCAST\2026sp1
 
 rem project location
 set PROJ_DIR=%~dp0..
