@@ -13,8 +13,7 @@ jobs:
      - uses: actions/checkout@v6
 
      - name: demo QA in CI
-       run: echo "demo QA in CI - $PROJ_DIR - $GITHUB_WORKSPACE"
-       run: vcast/setenv.bat && c:/dev/VCAST/2026sp1/vpython c:/dev/VCAST/vectorcast_gitlab/vc_scripts/vcast_exec.py vcast/Diner_Manager.vcm  --build-execute --ci --incremental 
+       run: .github/workflows/source.ps1 vcast/setenv.bat && c:/dev/VCAST/2026sp1/vpython c:/dev/VCAST/vectorcast_gitlab/vc_scripts/vcast_exec.py vcast/Diner_Manager.vcm  --build-execute --ci --incremental 
    
          #- name: Get covergae
          #run: echo get coverage
