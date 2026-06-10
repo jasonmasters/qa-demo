@@ -12,7 +12,7 @@ jobs:
 
      - name: demo QA in CI
        run: |-
-         vcast\\setenv.bat && & %VECTORCAST_DIR%\\vpython %VECTORCAST_DIR%\\..\\vectorcast_gitlab\\vc_scripts\\vcast_exec.py vcast\\Diner_Manager.vcm  --build-execute --ci --incremental --junit --cobertura --aggregate
+         vcast\\setenv.bat && %VECTORCAST_DIR%\\vpython %VECTORCAST_DIR%\\..\\vectorcast_gitlab\\vc_scripts\\vcast_exec.py vcast\\Diner_Manager.vcm  --build-execute --ci --incremental --junit --cobertura --aggregate
             exit 0
        shell: cmd
      - name: Get covergae
