@@ -13,14 +13,14 @@ jobs:
      - name: demo QA in CI
        run: .github\\workflows\\source.ps1 vcast\\setenv.bat && & $Env:VECTORCAST_DIR\\vpython $Env:VECTORCAST_DIR\\..\\vectorcast_gitlab\\vc_scripts\\vcast_exec.py vcast/Diner_Manager.vcm  --build-execute --ci --incremental --junit --cobertura --aggregate
    
-         #- name: Get covergae
-         #run: echo get coverage
-         #- uses: 5monkeys/cobertura-action@master
-         #with:
-         #path: vcast/xml_data/cobertura/coverage_results_project.xml
-         #minimum_coverage: 75
-         #skip_covered: false
-         #show_line: true
-         #show_branch: true
-         #report_name: VectorCAST Code Coverage
-         #show_missing: true
+     - name: Get covergae
+       run: echo get coverage
+     - uses: 5monkeys/cobertura-action@master
+       with:
+         path: xml_data/cobertura/coverage_results_project.xml
+         minimum_coverage: 75
+         skip_covered: false
+         show_line: true
+         show_branch: true
+         report_name: VectorCAST Code Coverage
+         show_missing: true

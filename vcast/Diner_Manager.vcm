@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="36">
   <config>
+    <config>
+      <key>VCAST_CUSTOM_REPORT_FORMAT</key>
+      <value>HTML</value>
+    </config>
     <base-directories>
       <key>VCAST_SourceRoot</key>
       <value>$(PROJ_DIR)</value>
