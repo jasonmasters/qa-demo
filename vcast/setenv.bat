@@ -1,5 +1,4 @@
 rem set environment
-
 rem use NVLM
 set VECTOR_LICENSE_FILE=
 
